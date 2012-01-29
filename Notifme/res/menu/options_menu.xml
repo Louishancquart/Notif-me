@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/preferences" android:title="Préférences"
+		android:visible="true">
+
+		<menu>
+			<item android:id="@+id/groupe" android:title="Changer de groupe TP"
+				android:visible="true" />
+
+			<Spinner android:id="@+id/Spinner01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<item android:id="@+id/sons" android:checkable="true"
+				android:checked="true" android:title="Jouer les sons"
+				android:visible="true" />
+
+			<item android:id="@+id/vibreur" android:checkable="true"
+				android:checked="true" android:title="Mode vibreur activé"
+				android:visible="true" />
+
+			<item android:id="@+id/notification" android:checkable="true"
+				android:checked="true" android:title="Désactiver les notifications"
+				android:visible="true" />
+		</menu>
+	</item>
+
+	<item android:id="@+id/quitter" android:title="Quitter"
+		android:visible="true">
+	</item>
+
+	<item android:id="@+id/site" android:title="Le site"
+		android:visible="true">
+	</item>
+
+	<item android:id="@+id/upload" android:title="Recharger"
+		android:visible="true">
+	</item>
+
+</menu>

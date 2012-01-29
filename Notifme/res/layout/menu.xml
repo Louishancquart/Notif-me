@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/preference" android:icon="@drawable/plus_24"
+		android:title="Préférences" />
+	
+	<item android:id="@+id/upload" android:icon="@drawable/back_24"
+		android:title="Recharger" />
+	
+	<item android:id="@+id/quitter" android:icon="@drawable/back_24"
+		android:title="Quitter" />
+
+	<!-- <item android:id="@+id/site" android:icon="@drawable/back_24"
+		android:title="Le site" /> -->
+
+</menu>

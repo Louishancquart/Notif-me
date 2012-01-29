@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="Préférences">
+
+	<PreferenceCategory android:title="Information sur l'utilisateur">
+		<EditTextPreference android:title="Lien vers le groupe"
+			android:key="linkgroupe" android:dialogTitle="Choix du groupe TP"
+			android:dialogMessage="Entrez l'url d'accès au fichier calendar de votre groupe commece ceci : http://gestionedt.emploisdutempssrc.net/edt/ical/SRC/(ici votre groupe TP exemples : SRC1A1, Com1, LPTAIS1)/basic.ics"
+			android:summary="Choisissez votre groupe TP" android:dialogIcon="@drawable/plus_24" />
+
+		<EditTextPreference android:title="Nom du groupe"
+			android:key="namegroupe" android:dialogTitle="Nom du groupe TP"
+			android:dialogMessage="Pour le bon fonctionnement de Notif'Me, veuillez rentrer le nom de votre groupe de la même manière que les exemples suivants et sans espaces"
+			android:summary="Entrez le nom de votre groupe" android:dialogIcon="@drawable/plus_24"
+			android:hint="exemples : SRC1B2, SRC2A1, Web1, Com2, LPTAIS1 ..." />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Gestion des préférences">
+		<CheckBoxPreference android:title="Jouer les sons"
+			android:key="sounds" android:summaryOn="Sons activés"
+			android:summaryOff="Mode silence" android:defaultValue="true" />
+
+		<CheckBoxPreference android:title="Vibrations"
+			android:key="vibrate" android:summaryOn="Mode vibreur"
+			android:summaryOff="Vibreur désactivé" android:defaultValue="true" />
+
+		<CheckBoxPreference android:title="Affichage des notifications"
+			android:key="notifications" android:summaryOn="Notifications activées"
+			android:summaryOff="Notifications désactivées" android:defaultValue="true" />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="Informations">
+	
+		<PreferenceScreen android:title="Version"
+			android:summary="1.0 beta">
+		</PreferenceScreen>
+		<PreferenceScreen android:title="Contact mail"
+			android:summary="alexiscap@gmail.com" android:key="email">
+			<!-- <intent android:action="org.projets4.notifme.EMAIL_ACCUWX" /> -->
+		</PreferenceScreen>
+		<PreferenceScreen android:title="Website"
+			android:summary="Accédez au site">
+			<intent android:data="http://gestionedt.emploisdutempssrc.net/"
+				android:action="android.intent.action.VIEW" />
+		</PreferenceScreen>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>
