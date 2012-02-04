@@ -61,30 +61,34 @@ public final class R {
     public static final class id {
         public static final int ClearNotif=0x7f090007;
         public static final int CreateNotif=0x7f090006;
-        public static final int Spinner01=0x7f090015;
+        public static final int Spinner01=0x7f090019;
         public static final int WebViewActuel=0x7f090003;
         public static final int WebViewSuivant=0x7f090004;
+        public static final int btecrire=0x7f090011;
+        public static final int btvoir=0x7f090012;
         public static final int description=0x7f090002;
-        public static final int groupe=0x7f090014;
+        public static final int groupe=0x7f090018;
         public static final int img=0x7f090000;
         public static final int infos=0x7f090005;
         public static final int linearLayout1=0x7f09000d;
-        public static final int notification=0x7f090018;
+        public static final int notification=0x7f09001c;
         public static final int prefGroupe1=0x7f090008;
         public static final int prefGroupe2=0x7f090009;
         public static final int prefNotifications=0x7f09000c;
         public static final int prefSounds=0x7f09000a;
         public static final int prefVibrate=0x7f09000b;
         public static final int preference=0x7f09000e;
-        public static final int preferences=0x7f090013;
+        public static final int preferences=0x7f090017;
         public static final int quitter=0x7f090010;
-        public static final int recup=0x7f090012;
-        public static final int site=0x7f090019;
-        public static final int sons=0x7f090016;
+        public static final int recup=0x7f090016;
+        public static final int site=0x7f09001d;
+        public static final int sons=0x7f09001a;
+        public static final int text1=0x7f090013;
+        public static final int text3=0x7f090014;
         public static final int titre=0x7f090001;
         public static final int upload=0x7f09000f;
-        public static final int url=0x7f090011;
-        public static final int vibreur=0x7f090017;
+        public static final int url=0x7f090015;
+        public static final int vibreur=0x7f09001b;
     }
     public static final class layout {
         public static final int affichageitem=0x7f030000;
@@ -94,6 +98,7 @@ public final class R {
         public static final int main=0x7f030004;
         public static final int menu=0x7f030005;
         public static final int styles=0x7f030006;
+        public static final int test=0x7f030007;
     }
     public static final class menu {
         public static final int options_menu=0x7f080000;

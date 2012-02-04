@@ -56,6 +56,10 @@
             android:label="@string/app_name"
             android:name=".HttpGetActivity"
             android:theme="@android:style/Theme.NoTitleBar" />
+         <activity
+            android:label="@string/app_name"
+            android:name=".Comparaison"
+            android:theme="@android:style/Theme.NoTitleBar" />
 
         <!-- <service android:name="org.projets4.notifme.NotifMeService"/> -->
     </application>
