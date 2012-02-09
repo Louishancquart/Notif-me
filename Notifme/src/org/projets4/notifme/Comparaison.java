@@ -18,14 +18,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
 
 public class Comparaison extends Activity{
 	
-	public TextView datatext = (TextView) findViewById(R.id.text1);
+	//public TextView datatext = (TextView) findViewById(R.id.text1);
+	protected String datatext;
 	private BufferedReader in0;
 	private BufferedReader in1;
 	protected String ligne;
@@ -36,9 +36,7 @@ public class Comparaison extends Activity{
 	private String cline;
 	private String LOG_TAG;
 	private String data;
-	private BufferedReader in;
-	private int cpt;
-	private String compteur;
+
 	
 	
 	
@@ -46,7 +44,7 @@ public class Comparaison extends Activity{
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.test); 
 	//httpget
-		setContentView(R.layout.test);
+		//setContentView(R.layout.test);
 	try {
 		data= getPage("http://gestionedt.emploisdutempssrc.net/edt/ical/SRC/Web1/basic.ics");
 		//datatext.append(data);
@@ -90,7 +88,7 @@ private void LireText(Context context) {
 
 			if(ligne==null){
 				//le bloc a disparru
-				datatext.append("des nouveau cours ont été ajoutés");
+				datatext += "des nouveau cours ont été ajoutés";
 			}
 			//comparaison  des blocs Uploadé et Originaux
 			if(!elements0[0].equals(elements1[0])/* && elements1[0]!= null*/ ){
@@ -106,27 +104,27 @@ private void LireText(Context context) {
 
 				if(ligne==null){
 					//le bloc a disparru
-					datatext.append("des nouveau cours ont été ajoutés");
+					datatext += "des nouveau cours ont été ajoutés";
 				}
 				if(elTest[0]==null){
 					//le bloc a disparru
-					datatext.append("ce cours a été supprimé"+elements0[0]);
+					datatext += "ce cours a été supprimé"+elements0[0];
 				}
 				else if((!elements0[1].equals(elTest[1]))){
 					//le typeà changé
-					datatext.append("le cours du "+elTest[0]+" est maintenant un "+elTest[1]);
+					datatext += "le cours du "+elTest[0]+" est maintenant un "+elTest[1];
 
 				}
 				else if((!elements0[2].equals(elTest[2]))){
 					//le cours à changé
 
-					datatext.append(" le cours du "+elTest[0]+" de "+elements0[2]+"a été remplacé par le "+elTest[1]+" de "+elTest[2]);
+					datatext += " le cours du "+elTest[0]+" de "+elements0[2]+"a été remplacé par le "+elTest[1]+" de "+elTest[2];
 				}
 				else if((!elements0[3].equals(elTest[3]))){
 					//la salle à changé
-					datatext.append(" la salle cours du "+elTest[0]+"est maintenant: "+elTest[3]);
+					datatext += " la salle cours du "+elTest[0]+"est maintenant: "+elTest[3];
 				}
-				datatext.append("\n");
+				datatext += "\n";
 			}
 			ligne=in0.readLine();
 			ligne1=in1.readLine();
